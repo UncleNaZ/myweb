@@ -38,10 +38,11 @@ function displayProducts() {
     const productDiv = document.createElement('div');
     productDiv.classList.add('product');
     productDiv.innerHTML = `
-      <img src="${product.image}" alt="${product.name}" class="product-image" onclick="openProductDetails('${product.name}')"/>
+      <img src="${product.image}" alt="${product.name}" class="product-image" />
       <h2>${product.name}</h2>
       <p>$${product.price}</p>
       <p class="description">${product.description}</p>
+      <button onclick="openProductDetails('${product.name}')">View Details</button>
       <button onclick="addToCart('${product.name}', ${product.price})">Add to Cart</button>
     `;
     productsContainer.appendChild(productDiv);
