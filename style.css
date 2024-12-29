@@ -1,0 +1,12 @@
+.product img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+}
+
+.product img:hover {
+  opacity: 0.8; /* Add a hover effect to make it more interactive */
+}
